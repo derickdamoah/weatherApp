@@ -1,0 +1,226 @@
+/* FOR MOBILE */
+
+body {
+  background-image: linear-gradient(#1e2d75, #9543a3);
+  background-attachment: fixed;
+}
+
+/* search bar*/
+input[type=search] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* The submit search button*/
+input[type=submit] {
+  width: 100%;
+  background-color: #09b55f; /* light green */
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #268053; /* dark green*/
+}
+
+/* main base layout */
+div {
+  position: relative;
+  border-radius: 5px;
+  background-color: rgba(242, 242, 242, 0.1); /* transparent base*/
+  font-family: Arial;
+  padding: 20px;
+  width: 90%;
+  height: 90px;
+  margin: auto;
+}
+
+/* search base layout */
+div.search {
+  position: relative;
+  border-radius: 5px;
+  padding: 20px;
+  width: 90%;
+  height: auto;
+}
+
+/* right column */
+div.rightside {
+  color: white;
+  background-color: rgba(242, 242, 242, 0.0);
+  position: absolute;
+  top: 10px;
+  right: 0px;
+  width: 48%;
+  height: auto;
+  padding: 0px;
+}
+
+/* left column */
+div.leftside {
+  color: white;
+  background-color: rgba(242, 242, 242, 0.0);
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 48%;
+  height: auto;
+  padding: 0px;
+}
+
+/* base layout for "search not found" */
+div.notfound{
+  height: auto;
+  text-align: center;
+}
+
+/* output label*/
+label {
+  color: white;
+  font-family: Arial;
+  font-size: 8vw;
+}
+
+
+label.largefont{
+  color: white;
+  font-family: Arial;
+  font-size: 15vw;
+}
+
+label.mediumfont {
+  color: white;
+  font-family: Arial;
+  font-size: 8vw;
+}
+
+label.smallfont {
+  color: white;
+  font-family: Arial;
+  font-size: 6vw;
+}
+
+label.notfound {
+  color: white;
+  font-family: Arial;
+  font-size: 20px;
+  text-align: center;
+}
+
+/* cloud image */
+img {
+  height: 50px;
+  width: 70px;
+}
+
+/* FOR DESKTOP */
+@media only screen and (min-width: 600px) {
+
+/* search bar input */
+input[type=search] {
+  width: 60%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* The submit search button*/
+input[type=submit] {
+  width: 39%;
+  background-color: #09b55f;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+div {
+  position: relative;
+  border-radius: 5px;
+  background-color: rgba(242, 242, 242, 0.1);
+  font-family: Arial;
+  padding: 20px;
+  width: 40%;
+  height: 190px;
+  margin: auto;
+}
+
+div.search {
+  position: relative;
+  border-radius: 5px;
+  padding: 20px;
+  width: 40%;
+  height: auto;
+}
+
+div.rightside {
+  color: white;
+  background-color: rgba(242, 242, 242, 0.0);
+  position: absolute;
+  top: 10px;
+  right: 0px;
+  width: 48%;
+  height: auto;
+  padding: 0px;
+  float: right;
+}
+div.leftside {
+  color: white;
+  background-color: rgba(242, 242, 242, 0.0);
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 48%;
+  height: auto;
+  padding: 0px;
+}
+
+div.notfound{
+  height: auto;
+  text-align: center;
+}
+
+label.notfound {
+  color: white;
+  font-family: Arial;
+  font-size: 30px;
+  text-align: center;
+}
+
+label.largefont{
+  color: white;
+  font-family: Arial;
+  font-size: 8vw;
+}
+
+label.mediumfont {
+  color: white;
+  font-family: Arial;
+  font-size: 2vw;
+}
+
+label.smallfont {
+  color: white;
+  font-family: Arial;
+  font-size: 1.5vw;
+}
+
+img {
+  height: 150px;
+  width: 150px;
+}
+}

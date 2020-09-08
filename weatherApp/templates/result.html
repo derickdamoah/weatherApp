@@ -1,0 +1,36 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/stylesheet.css' %}">
+    <title>Derick Weather App</title>
+</head>
+
+<body>
+
+<!-- -->
+<div class="search">
+    <form action="weather" method="post">
+        {% csrf_token %}
+        <input type="search" id="cityname" name="cityname" placeholder="City name.." required>
+        <input type="submit" value="Search">
+    </form>
+</div><br>
+
+
+<div>
+    <div class="leftside">
+        <label class="mediumfont">{{cityname}}</label><br>
+        <label class="largefont">{{temperature}}&#176</label><br>
+        <label class="smallfont">{{description}}</label><br>
+        <label class="smallfont">Humidity: {{humidity}}%</label>
+    </div>
+    <div class="rightside">
+        <img class="img" src="{{iconurl}}"><br>
+        <label class="smallfont">Max: {{maxTemp}}&#176 Min: {{minTemp}}&#176</label><br>
+        <label class="mediumfont">Wind: {{wind}}km/h</label>
+    </div>
+</div>
+</body>
+</html>
