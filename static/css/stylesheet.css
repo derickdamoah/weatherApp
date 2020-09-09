@@ -4,8 +4,9 @@ body {
   background-image: linear-gradient(#1e2d75, #9543a3);
   background-repeat: no-repeat;
   background-attachment: fixed;
-  height: 100%
-  width: 100%
+  height: 1080px;
+  width: 100%;
+  margin: auto;
 }
 
 /* search bar*/
