@@ -9,7 +9,7 @@ def home(request):
 
 def weather(request):
     city_id = request.POST['cityname'].capitalize()
-    API_KEY = "" # get the API key from the environment variable
+    API_KEY = os.environ.get("WEATHER_API_KEY") # get the API key from the environment variable
     url = "https://api.openweathermap.org/data/2.5/" \
           "weather?q={}&appid={}&units=metric".format(city_id.casefold(), API_KEY)
     r = requests.get(url)
