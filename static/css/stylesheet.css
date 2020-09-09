@@ -2,8 +2,9 @@
 
 body {
   background-image: linear-gradient(#1e2d75, #9543a3);
+  background-repeat: no-repeat;
   background-attachment: fixed;
-  height: auto;
+  height: 500px;
   width: 100%;
   margin: auto;
 }
